@@ -1,0 +1,174 @@
+.trillet-call {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.call-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: linear-gradient(145deg, #ffffff, #f5f7ff);
+  border-radius: 24px;
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.example-title {
+  text-align: center;
+  color: #2d3748;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.call-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.call-header h2 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.call-header p {
+  color: #718096;
+  font-size: 1rem;
+}
+
+.call-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: #f7fafc;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  color: #4a5568;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+}
+
+.status-dot.connected {
+  background: #48bb78;
+  box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.2);
+}
+
+.status-dot.disconnected {
+  background: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
+
+.status-indicators {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.assistant-speaking {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: #ebf8ff;
+  color: #2b6cb0;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  animation: pulse 2s infinite;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.controls button {
+  flex: 1;
+  padding: 0.875rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.connect-btn {
+  background: #4299e1;
+  color: white;
+  box-shadow: 0 4px 6px rgba(66, 153, 225, 0.2);
+}
+
+.connect-btn:hover {
+  background: #3182ce;
+  transform: translateY(-1px);
+}
+
+.mute-btn {
+  background: white;
+  color: #4a5568;
+  border: 1px solid #e2e8f0 !important;
+}
+
+.mute-btn:hover {
+  background: #f7fafc;
+}
+
+.mute-btn.muted {
+  background: #fed7d7;
+  color: #c53030;
+}
+
+.disconnect-btn {
+  background: #fc8181;
+  color: white;
+}
+
+.disconnect-btn:hover {
+  background: #e53e3e;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(43, 108, 176, 0.2);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(43, 108, 176, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(43, 108, 176, 0);
+  }
+}
+
+@media (max-width: 640px) {
+  .call-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+} 
