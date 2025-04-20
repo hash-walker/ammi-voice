@@ -8,7 +8,7 @@
     "eventemitter3": "^5.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "trillet-demo": "file:",
     "web-vitals": "^4.2.4"
   },
@@ -43,5 +43,13 @@
     "@types/jest": "^29.5.14",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2"
+  },
+  "resolutions": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31"
   }
 }

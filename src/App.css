@@ -1,5 +1,8 @@
 .App {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%);
 }
 
@@ -27,4 +30,31 @@ main {
   justify-content: center;
   align-items: flex-start;
   padding: 1rem;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* Space for the fixed navbar */
+  padding-bottom: 20px;
+}
+
+/* Reset some browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffeef8, #f9f7ff);
+}
+
+/* Utility classes */
+.section-padding {
+  padding: 4rem 0;
+}
+
+/* Smooth scrolling for the whole site */
+html {
+  scroll-behavior: smooth;
 }
